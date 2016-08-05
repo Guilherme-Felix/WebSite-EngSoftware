@@ -1,0 +1,88 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Montini Imóveis</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+  		<link rel="stylesheet" type="text/css" href="banner.css">
+  		<script type="text/jscript" src="banner.js"></script>
+	</head>
+
+	<body background="imagens/background.jpg">
+		<div id="cabecalho">
+        	<img id="topo" src="imagens/banner.jpg" />
+      		</div>
+
+      		<div id="menu">
+        		<ul>
+          			<li><a href="index.html"><font size="2" color="white" face="Arial"> HOME </font></a></li>
+          			<li><a href="destaques.html"><font size="2" color="white" face="Arial"> DESTAQUES </font></a></li>
+          			<li><a href="imoveis.html"><font size="2" color="white" face="Arial"> IMÓVEIS </font></a></li>
+          			<li><a href="parceiros.html"><font size="2" color="white" face="Arial"> PARCEIROS </font></a></li>
+          			<li><a href="contato.html"><font size="2" color="white" face="Arial"> CONTATO </font></a></li>
+			
+					<input type="search" id="mySearch" placeholder="Pesquisar" onsearch="myFunction()"/>
+          <button onclick="myFunction()">Buscar</button>
+          <script>
+          function myFunction() {
+              var x = document.getElementById("mySearch").value;
+              window.open("https://www.google.com.br/#hl=pt-BR&q=" + x);
+          }
+          </script>
+				</li>
+				<li><a href="login.html"><font size="2" color="white" face="Arial"> LOGIN </font></a></li>
+
+        		</ul>
+    </div>
+    	
+
+    <div id="corpo">
+      <table align="center">
+        <tr>
+          <td>
+            <div id="banner" class="banner">
+              <div id="banner_img">
+                <a style="background:none;" href="contato.html"><img src="banner_img/1.jpg" width="794px" height="228px" border="0" alt="Banner"></a>
+              </div>
+              <div id="botoes">
+                <a href="javascript:void(0);" id="banner_img_1" class="hover" onclick="mudarImagem('0');">1</a>
+                <a href="javascript:void(0);" id="banner_img_2" onclick="mudarImagem('1');">2</a>
+                <a href="javascript:void(0);" id="banner_img_3" onclick="mudarImagem('2');">3</a>
+                <a href="javascript:void(0);" id="banner_img_4" onclick="mudarImagem('3');">4</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <div class="corpoTexto">
+        <font color="black" size="2" face="Verdana">
+          &nbsp;&nbsp;&nbsp;A Imobiliária <b>Montini Imóveis</b>, atua na comercialização e locação de imóveis residenciais e comerciais
+          de médio e alto padrão, oferecendo como diferencial uma estrutura capaz de prestar o melhor atendimento
+          aos seus clientes. <br><br>
+          &nbsp;&nbsp;&nbsp;Nossa empresa presta serviços para as melhores incorporadoras e construtoras do mercado e conta com
+          uma excelente carteira de clientes individuais. <b>Montini Imóveis</b> busca continuamente um contato mais próximo com os
+          clientes, efetuando um atendimento pessoal, ampliando os laços de confiança e buscando um relacionamento duradouro
+          e transparente. <br><br>
+          &nbsp;&nbsp;&nbsp;<b>Montini Imóveis</b> tem forte atuação na prospecção e intermediação de áreas, levantamento de mercado    imobiliário com indicação de produto adequado para cada região e preço de imóveis, assessorando e intermediando incorporadoras e construtoras na aquisição de áreas para desenvolvimentos imobiliários e efetuando o lançamento comercial dos produtos desenvolvidos. <br><br>
+          &nbsp;&nbsp;&nbsp;<b>Principais vantagens para o cliente:</b><br><br>
+          - Compromisso com a transparência, profissionalismo e idoneidade; <br>
+          - Equipe de consultores especializados; <br>
+          - Foco na atuação e compromisso com o sucesso de comercialização tanto nos lançamentos, quanto nas vendas de imóveis avulsos; <br>
+          - Experiência no mercado imobiliário e de potenciais compradores em cada região; <br>
+          - Acompanhamento periódico através de reuniões com incorporadoras e construtoras, embasadas em relatórios completos de comercialização e marketing; <br>
+          - Compromisso com a liquidez e velocidade de venda de todos os empreendimentos e unidades avulsas. <br>
+        </font>
+      </div>
+    </div>
+
+	  <div id="rodape">
+     		<font color="white" face="Arial" size="2">
+       		TRABALHO: Engenharia de Software - UFJF<br>
+        	WEBSITE DESENVOLVIDO POR <b>Grupo 2</b><br>
+        </font>
+    </div>
+
+	</body>
+
+</html>

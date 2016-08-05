@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Montini Imóveis</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+    <script type="text/jscript" src="validarlogin.js"></script>
+	</head>
+
+	<body background="imagens/background.jpg">
+		<div id="cabecalho">
+        	<img id="topo" src="imagens/banner.jpg" />
+      		</div>
+
+      		<div id="menu">
+        		<ul>
+          			<li><a href="index.html"><font size="2" color="white" face="Arial"> HOME </font></a></li>
+          			<li><a href="destaques.html"><font size="2" color="white" face="Arial"> DESTAQUES </font></a></li>
+          			<li><a href="imoveis.html"><font size="2" color="white" face="Arial"> IMÓVEIS </font></a></li>
+          			<li><a href="parceiros.html"><font size="2" color="white" face="Arial"> PARCEIROS </font></a></li>
+          			<li><a href="contato.html"><font size="2" color="white" face="Arial"> CONTATO </font></a></li>
+				<li>
+					<input type="search" id="mySearch" placeholder="Pesquisar" onsearch="myFunction()"/>
+          <button onclick="myFunction()">Buscar</button>
+          <script>
+          function myFunction() {
+              var x = document.getElementById("mySearch").value;
+              window.open("https://www.google.com.br/#hl=pt-BR&q=" + x);
+          }
+          </script>
+				</li>
+				<li><a href="login.html"><font size="2" color="white" face="Arial"> LOGIN </font></a></li>
+
+        		</ul>
+    </div>
+
+    <div id="corpo">
+      <div class="corpoTexto">
+        <br>
+        <font color="red" size="3" face="Verdana">Login</font>
+        <font color="black" size="2" face="Verdana">
+        
+          <p>
+            Digite aqui seus dados para login: 
+          </p>
+          
+          <form name="form2" method="post" action="logado.html">
+            <table border="0">        
+              <tr>         
+                <td width="100" onSubmit="return validarlogin()">
+                  Login:
+                </td>            
+                <td>
+                  <input type="text" size="42" name="login" />
+                </td>            
+              </tr>
+              
+              <tr><td><br></td><td></td></tr> <!--Saltar uma linha-->
+              
+              <tr>    
+                <td width="100">
+                  Senha:
+                </td>
+                <td>
+                  <input type="password" size="42" name="senha" />
+                </td>
+              </tr>
+
+              <tr><td><br></td><td></td></tr> <!--Saltar uma linha-->
+              
+            </table>
+              <input type="submit" value="Login" onclick="return validarlogin()" />
+          </form>
+        </font>
+      </div>  
+    </div>
+
+	  <div id="rodape">
+     		<font color="white" face="Arial" size="2">
+       		TRABALHO: Engenharia de Software - UFJF<br>
+        	WEBSITE DESENVOLVIDO POR <b>Grupo 2</b><br>
+        </font>
+    </div>
+
+	</body>
+
+</html>

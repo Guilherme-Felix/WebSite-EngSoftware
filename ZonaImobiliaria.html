@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Montini Imóveis</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script type="text/jscript" src="validar.js"></script>
+	</head>
+
+	<body background="imagens/background.jpg">
+    		<div id="cabecalho"><img id="topo" src="imagens/banner.jpg" /></div>
+
+      		<div id="menu">
+        		<ul>
+          		
+          			<li><a href="funcionario.html"><font size="2" color="white" face="Arial"> FUNCIONARIOS </font></a></li>
+          			<li><a href="ZonaImobiliaria.html"><font size="2" color="white" face="Arial">  ZONA IMOBOLIARIA </font></a></li>
+					<li><a href="produtos.html"><font size="2" color="white" face="Arial"> IMÓVEIS </font></a></li>
+			
+					<input type="search" id="mySearch" placeholder="Pesquisar" onsearch="myFunction()"/>
+					<button onclick="myFunction()">Buscar</button>
+					<script>
+					function myFunction() {
+					    var x = document.getElementById("mySearch").value;
+					    window.open("https://www.google.com.br/#hl=pt-BR&q=" + x);
+					}
+					</script>
+					
+					<li><a href="index.html"><font size="2" color="white" face="Arial"> LOGOUT </font></a></li>
+				</li>
+        		</ul>
+			</div>
+
+		<div id="corpo">
+		<br>
+
+		<div class="formulario">
+            		<font color="red" size="3" face="Verdana">Cadastro de Zona Imobiliária</font>
+            		<font color="black" size="2" face="Verdana">
+              		<p>
+                	Insira as informações que deseja alterar.<br><br>
+
+                	Todos os campos com <font color="red">*</font> são obrigatórios.
+              		</p>
+
+			<form name="form3" method="post" action="logado.html">
+			<table border="0">				
+				<tr>
+				<td width="100" onSubmit="return validarzona()">
+					Código Referência<font color="red">*</font>:
+				</td>
+				<td>
+					<input type="text" size="42" name="codigo" />
+				</td>
+				</tr>
+				<tr><td><br></td><td></td></tr> <!--Soltar uma linha-->
+				<tr>		
+				<td width="100">
+					Preço Metro Quadrado<font color="red">*</font>:
+				</td>
+				<td>
+					<input type="text" size="42" name="preco" />
+				</td>
+				</tr>	
+				<tr><td><br></td><td></td></tr> <!--Soltar uma linha-->
+				<tr>
+				<td width="100">
+				
+	                         Tipo:
+	                              <td> <select name = "TipoZonaImobiliaria"> 
+
+	                                       <option value = "Rural">  Rural  </option>
+	                                       <option value = "Urbana"> Urbana </option>
+
+                                        </select>
+	                              </td>         	                        		                		           
+
+				<tr><td><br></td><td></td></tr> <!--Soltar uma linha-->
+              		</table>
+				Descrição <font color="red">*</font>:<br>
+				<textarea name="descricao" cols="55" rows="11"></textarea><br>
+				<input type="submit" value="Salvar Alterações" onclick="return validarzona()" />
+              		</form>
+       
+        		</div>
+              	<br>
+              	<!--
+              	<p>
+                Endereço: Rua José Lourenço Kelmer n°111 <br>
+                Bairro São Pedro - CEP: 36036-900 - Juiz de Fora - MG <br>
+                Telefones: (32) 2102-3911 (32) 2102-3989 <br>
+                
+              </p>
+              -->
+            </font>
+
+		</div>
+		<div id="rodape">
+			<font color="white" face="Arial" size="2">
+       		TRABALHO: Engenharia de Software - UFJF<br>
+        	WEBSITE DESENVOLVIDO POR <b>Grupo 2</b><br>
+		</div>
+
+	</body>
+
+</html>

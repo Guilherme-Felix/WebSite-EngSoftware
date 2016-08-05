@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Montini Imóveis</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script type="text/jscript" src="validar.js"></script
+	</head>
+
+	<body background="imagens/background.jpg">
+    		<div id="cabecalho"><img id="topo" src="imagens/banner.jpg" /></div>
+
+      		<div id="menu">
+        		<ul>
+          			<li><a href="index.html"><font size="2" color="white" face="Arial"> HOME </font></a></li>
+          			<li><a href="destaques.html"><font size="2" color="white" face="Arial"> DESTAQUES </font></a></li>
+          			<li><a href="imoveis.html"><font size="2" color="white" face="Arial"> IMÓVEIS </font></a></li>
+          			<li><a href="parceiros.html"><font size="2" color="white" face="Arial"> PARCEIROS </font></a></li>
+          			<li><a href="contato.html"><font size="2" color="white" face="Arial"> CONTATO </font></a></li>
+
+				<li>
+					<input type="search" id="mySearch" placeholder="Pesquisar" onsearch="myFunction()"/>
+					<button onclick="myFunction()">Buscar</button>
+					<script>
+					function myFunction() {
+					    var x = document.getElementById("mySearch").value;
+					    window.open("https://www.google.com.br/#hl=pt-BR&q=" + x);
+					}
+					</script>
+				<li><a href="login.html"><font size="2" color="white" face="Arial"> LOGIN </font></a></li>
+        		</ul>
+      		</div>
+
+		<div id="corpo">		
+			<div class="corpoTexto">	
+				<br>
+		    		<font color="red" size="3" face="Verdana">Fale conosco</font>
+		    		<font color="black" size="2" face="Verdana">
+		      		<p>
+		        	Gostou de algum imóvel e deseja comprá-lo ou alugá-lo? Entre em contato conosco.<br><br>
+		        	Para enviar uma mensagem, basta preencher os campos abaixo ou entrar em nossa sala de bate papo Montini.<br><br>
+		        	<b>Atenção:</b> Para compra ou locação de imóveis, não esqueça de colocar o <b>código<br>
+		        	do imóvel</b> em sua mensagem.<br><br>Todos os campos com <font color="red">*</font> são obrigatórios.<br>Para se conectar ao bate papo Montini preencha os campos e clique em <b>conexao</b>, Voce sera direcionada para a sala Montini<br>
+		    
+		      		</p>
+				<table align="center">
+					<tr>
+						<td height="30" colspan="2">
+						<div align="center"><h3> Montini </h3></div>
+						</td>
+					</tr>
+
+					<form method="post" action="https://batepapo.zetboo.com/batepapo.html" target="_blank" />
+					<input type="hidden" name="titulo_room" value="Montini" />
+					<input type="hidden" name="room" value="Duvidas" />
+					<input type="hidden" name="cor" value="#0000FF" />
+					<input type="hidden" name="lg" value="pt-br" />
+
+					<tr>			
+						<td align="right">
+						 Usuario : 
+						</td>
+						<td align="left"><input type="text" name="nome" size="20" />
+						</td>
+					</tr>
+
+					<tr>
+						<td align="right">Estado : 
+						</td>
+						<td align="left"><input type="text" name="vila" size="20" />
+						</td>
+					</tr>
+
+					<tr>
+						<td align="right">Idade : 
+						</td>
+						
+						<td align="left"><input type="text" name="idade" size="4" />
+						</td>
+					</tr>
+
+					<tr>
+						<td align="right">Sexo : 
+						</td>
+						<td align="left">
+							<input type=radio name="sexe" value="H" checked />Homem
+							<input type=radio name="sexe" value="M" checked />Mulher
+							<input type=radio name="sexe" value="I" checked />Indeciso
+						</td>
+
+					</tr>
+
+					<tr>
+						<td colspan="2" align="center"><input TYPE="submit" value="conexão" name="criar" />
+						</td>
+					</tr>
+
+					</form>
+
+				</table>
+
+					<form name="form1" method="post">
+
+						<table border="0">	
+							<img src="imagens/contato.jpg"  width="150" height="150" align="left" />			
+							<tr>
+							<td width="100" onSubmit="return validar()">
+								Nome<font color="red">*</font>:
+							</td>
+							<td>
+								<input type="text" size="42" name="nome" />
+							</td>
+							</tr>
+							<tr><td><br></td><td></td></tr> <!--Saltar uma linha-->
+							<tr>		
+							<td width="100">
+								E-mail<font color="red">*</font>:
+							</td>
+							<td>
+								<input type="text" size="42" name="email" />
+							</td>
+							</tr>	
+							<tr><td><br></td><td></td></tr> <!--Saltar uma linha-->
+							<tr>
+							<td width="100">
+								Telefone:
+							</td>
+							<td>
+								<input type="text" size="42" name="tel" />
+							</td>	
+							</tr>
+							<tr><td><br></td><td></td></tr> <!--Saltar uma linha-->
+							<tr>
+							<td width="100">
+								Assunto<font color="red">*</font>:
+							</td>
+							<td>
+								<input type="text" size="42" name="assunto" />
+							</td>	
+							</tr>
+							<tr><td><br></td><td></td></tr> <!--Saltar uma linha-->
+			            </table>
+
+						Mensagem<font color="red">*</font>:<br>
+						<textarea name="mensagem" cols="55" rows="3"></textarea><br>
+						<input type="submit" value="Enviar Mensagem" onclick="return validar()" />       
+		            </form>
+	            <font size="1">
+	             	<p>
+		                Endereço: Rua José Lourenço Kelmer n°111<br>
+		                Bairro São Pedro - CEP: 36036-900 - Juiz de Fora - MG<br>
+		                Telefones: (32) 2102-3911 (32) 2102-3989<br>
+		                Para ver o MAPA, <a href="https://maps.google.com.br/maps?safe=active&hl=pt-BR&ie=UTF-8&q=ufjf&fb=1&gl=br&hq=ufjf&hnear=ufjf&cid=0,0,15687315750974135309&ei=AQJvUrn8FaOdyQHwlIGAAg&sqi=2&ved=0CJQBEPwS" target="_blank"> clique  aqui</a>
+	                </p>
+	            </font>
+			</div> 
+		</div>
+		<div id="rodape">
+			<font color="white" face="Arial" size="2">
+       		TRABALHO: Engenharia de Software - UFJF<br>
+        	WEBSITE DESENVOLVIDO POR <b>Grupo 2</b><br>
+        	
+		</div>
+
+	</body>
+
+</html>

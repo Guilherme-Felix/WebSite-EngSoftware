@@ -1,0 +1,52 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Montini Imóveis</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+  		<link rel="stylesheet" type="text/css" href="banner.css">
+  		<script type="text/jscript" src="banner.js"></script>
+	</head>
+
+	<body background="imagens/background.jpg">
+		<div id="cabecalho">
+        	<img id="topo" src="imagens/banner.jpg" />
+      		</div>
+
+      		<div id="menu">
+        		<ul>
+          		
+          			<li><a href="funcionario.html"><font size="2" color="white" face="Arial"> FUNCIONARIOS </font></a></li>
+          			<li><a href="ZonaImobiliaria.html"><font size="2" color="white" face="Arial">  ZONA IMOBOLIARIA </font></a></li>
+					<li><a href="produtos.html"><font size="2" color="white" face="Arial"> IMÓVEIS </font></a></li>
+			
+					<input type="search" id="mySearch" placeholder="Pesquisar" onsearch="myFunction()"/>
+					<button onclick="myFunction()">Buscar</button>
+					<script>
+					function myFunction() {
+					    var x = document.getElementById("mySearch").value;
+					    window.open("https://www.google.com.br/#hl=pt-BR&q=" + x);
+					}
+					</script>
+					
+					<li><a href="index.html"><font size="2" color="white" face="Arial"> LOGOUT </font></a></li>
+				</li>
+        		</ul>
+			</div>
+    	
+
+    <div id="corpo">
+		<img src="imagens/centralFuncionario.png" width="900"/>
+    </div>
+    </div>
+
+	  <div id="rodape">
+     		<font color="white" face="Arial" size="2">
+       		TRABALHO: Engenharia de Software - UFJF<br>
+        	WEBSITE DESENVOLVIDO POR <b>Grupo 2</b><br>
+        </font>
+    </div>
+
+	</body>
+
+</html>

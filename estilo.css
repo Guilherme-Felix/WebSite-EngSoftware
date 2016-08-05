@@ -1,0 +1,77 @@
+#cabecalho{
+width: 900px;
+height: 242px;
+margin: 0 auto;
+}
+
+#topo {
+height: 238px;
+width: 898px;
+}
+
+#corpo{
+background-color: white;
+width: 900px;
+height: 750px;
+margin: 0 auto;
+}
+
+.formulario, .corpoTexto{
+margin: 0.5cm;
+margin-top: 0cm;
+}
+
+
+#menu {
+blackground-color: black;
+width: 900px;
+height: 40px;
+margin: 0 auto;
+}
+
+#menu ul {
+padding:0px;
+margin: 0 auto;
+background-color: black;
+list-style:none;
+}
+	
+#menu ul li{ display: inline; }
+
+#menu ul li a {
+padding: 10px;
+display: inline-block;  
+color: #000001;
+text-decoration: none;
+}
+
+#menu ul li a:hover {
+background-color:#780101;
+}
+
+#rodape{
+background-color: black;
+width: 900px;
+height: 50px;
+text-align: center;
+margin: 0 auto;
+}
+
+
+.fixed {
+    width: 25%;
+
+}
+
+
+/* PARA DEIXAR A TABELA BEM DISTRIBUIDA */
+.fluid {
+        width: 20%;
+}
+
+#tableText{
+        text-align:left;
+}
+
+
+

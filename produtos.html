@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Montini Imóveis</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script type="text/jscript" src="validar.js"></script>
+	</head>
+
+	<body background="imagens/background.jpg">
+    		<div id="cabecalho"><img id="topo" src="imagens/banner.jpg" /></div>
+
+      		<div id="menu">
+        		<ul>
+          		
+          			<li><a href="funcionario.html"><font size="2" color="white" face="Arial"> FUNCIONARIOS </font></a></li>
+          			<li><a href="ZonaImobiliaria.html"><font size="2" color="white" face="Arial">  ZONA IMOBOLIARIA </font></a></li>
+					<li><a href="produtos.html"><font size="2" color="white" face="Arial"> IMÓVEIS </font></a></li>
+			
+					<input type="search" id="mySearch" placeholder="Pesquisar" onsearch="myFunction()"/>
+          <button onclick="myFunction()">Buscar</button>
+          <script>
+          function myFunction() {
+              var x = document.getElementById("mySearch").value;
+              window.open("https://www.google.com.br/#hl=pt-BR&q=" + x);
+          }
+          </script>
+					
+					<li><a href="index.html"><font size="2" color="white" face="Arial"> LOGOUT </font></a></li>
+				</li>
+        		</ul>
+			</div>
+
+		<div id="corpo">
+		<br>
+
+			<div class="formulario">
+            		<font color="red" size="3" face="Verdana">Cadastro de Imóvel</font>
+            		<font color="black" size="2" face="Verdana">
+              		<p>
+                	Insira as informações que deseja alterar.<br><br>
+
+                	Todos os campos com <font color="red">*</font> são obrigatórios.
+              		</p>
+
+			<form name="form5" method="post" action="logado.html">
+			
+			<fieldset>
+ 			<legend>Dados do Proprietário</legend>
+			
+			<table border="0">				
+
+				<tr>
+								
+					<td id="tableText" class="fluid" onSubmit="return validarproduto()">
+						Nome Completo<font color="red">*</font>:
+					</td>
+
+					<td class="fluid">
+						<input type="text" size="30" name="nome" />
+					</td>
+						
+					<td class="fluid">
+					</td>						
+					<td class="fluid">						
+					</td>						
+					<td class="fluid">						
+					</td>						
+					<td class="fluid">						
+					</td>												
+				</tr>
+				
+				<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <!--Saltar uma linha-->
+
+
+				<tr>		
+					<td id="tableText">
+						CPF<font color="red">*</font>:
+					</td>
+					<td>
+						<input type="text" size="20" name="CPF" />
+					</td>
+					<td>
+					</td> 					
+					<td></td> 						
+					<td></td> 						
+					<td></td>
+					</tr>	
+													
+					<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <!--Saltar uma linha-->
+
+				
+				<tr>		
+					<td id="tableText">
+						E-mail<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="20" name="email" />
+					</td>
+
+					<td id="tableText">
+						Telefone<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="15" name="tel" />
+					</td>
+					
+					<td id="tableText">
+							Celular<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="15" name="cel" />
+					</td>
+							
+				</tr>	
+
+			</table>
+			</fieldset>
+			
+			<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <!--Saltar uma linha-->
+			
+			<fieldset>
+ 			<legend>Dados do Imóvel</legend>
+			
+			<table border="0">				
+
+				<tr>
+								
+					<td id="tableText" class="fluid" onSubmit="return validarproduto()">
+						Codigo<font color="red">*</font>:
+					</td>
+
+					<td class="fluid">
+						<input type="text" size="5" name="codigo" />
+					</td>	
+
+					<td>				
+						Estado<font color="red">*</font>:
+						<td> <select name = "statusFunc"> 
+							<option value = "construido">  Construído  </option>
+							<option value = "emconstrucao"> Em Construção </option>
+						</select>
+						</td>   
+					</td>
+					<td>				
+						Tipo<font color="red">*</font>:
+						<td> <select name = "statusFunc"> 
+							<option value = "casa">  Casa  </option>
+							<option value = "apartamento"> Apartamento </option>
+							<option value = "terreno"> Terreno </option>
+							<option value = "comercial"> Comercial </option>
+							<option value = "chacara"> Chácara </option>
+							<option value = "fazenda"> Fazenda </option>
+						</select>
+						</td>   
+					</td>
+				
+				</tr>
+				
+				<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr> <!--Saltar uma linha-->
+
+				<tr>		
+					<td id="tableText">
+						UF<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="25" name="uf" />
+					</td>
+
+					<td id="tableText">
+						Cidade<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="25" name="cidade" />
+					</td>
+					
+					<td id="tableText">
+						Bairro<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="25" name="bairro" />
+					</td>		
+				</tr>	
+				<tr>		
+					<td id="tableText">
+						Rua<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="25" name="rua" />
+					</td>
+
+					<td id="tableText">
+						Número<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="25" name="numero" />
+					</td>
+					
+					<td id="tableText">
+						Complemento<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="25" name="complemento" />
+					</td>		
+				</tr>	
+
+			</table>
+       
+				<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+				
+				<tr>		
+					<td id="tableText">
+						Área Construída<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="13" name="areaconst" />
+					</td>
+
+					<td id="tableText">
+						Área Total<font color="red">*</font>:
+					</td>
+					
+					<td>
+						<input type="text" size="13" name="areatotal" />
+					</td>
+					
+					<td id="tableText">
+						Preço m²:
+					</td>
+					
+					<td>
+						<input type="text" size="13" name="precomquad" />
+					</td>	
+					
+					<td>				
+	                    Disponibilidade<font color="red">*</font>:
+	                    <td> <select name = "statusFunc"> 
+	                        <option value = "aluguel">  Aluguel  </option>
+	                        <option value = "venda"> Venda </option>
+                        </select>
+	                    </td>   
+					</td>
+					
+				</tr>	
+				
+				<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+				<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+				
+				<tr>
+					<td>
+						<td id="tableText">
+							Preço: <font color="red">*</font>:
+						</td>
+						
+						<td>
+							<input type="text" size="15" name="preco" />
+						</td>
+					</td>
+					<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+					<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+					<td>
+						Descrição :<br>
+						<textarea name="descricao" cols="40" rows="5"></textarea><br>
+						</td>
+				</tr>
+			</fieldset>
+			
+				<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+				<tr> <td><br></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>
+				
+				<input type="submit" value="Enviar Dados" onclick="return validarproduto()" />
+        	</div>
+		</div>
+		<div id="rodape">
+			<font color="white" face="Arial" size="2">
+       		TRABALHO: Engenharia de Software - UFJF<br>
+        	WEBSITE DESENVOLVIDO POR <b>Grupo 2</b><br>
+		</div>
+
+	</body>
+
+</html>

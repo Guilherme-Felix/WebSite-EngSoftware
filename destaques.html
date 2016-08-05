@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Montini Imóveis</title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+
+	<body background="imagens/background.jpg">
+      		<div id="cabecalho"><img id="topo" src="imagens/banner.jpg" /></div>
+
+      		<div id="menu">
+        		<ul>
+          			<li><a href="index.html"><font size="2" color="white" face="Arial"> HOME </font></a></li>
+          			<li><a href="destaques.html"><font size="2" color="white" face="Arial"> DESTAQUES </font></a></li>
+          			<li><a href="imoveis.html"><font size="2" color="white" face="Arial"> IMÓVEIS </font></a></li>
+          			<li><a href="parceiros.html"><font size="2" color="white" face="Arial"> PARCEIROS </font></a></li>
+          			<li><a href="contato.html"><font size="2" color="white" face="Arial"> CONTATO </font></a></li>
+			
+				<li>
+					<input type="search" id="mySearch" placeholder="Pesquisar" onsearch="myFunction()"/>
+					<button onclick="myFunction()">Buscar</button>
+					<script>
+					function myFunction() {
+					    var x = document.getElementById("mySearch").value;
+					    window.open("https://www.google.com.br/#hl=pt-BR&q=" + x);
+					}
+					</script>
+				</li>
+				<li><a href="login.html"><font size="2" color="white" face="Arial"> LOGIN </font></a></li>
+        		</ul>
+      		</div>
+
+	<div id="corpo">
+		<img src="imagens/destaques.jpg" width="900"/>
+		<table border="0" align="center" >
+			<tr>
+			<td width="390" height="300">
+				<a href="contato.html"><img src="imagens/destaque1.png" /></a>
+					<font size="3" face="Verdana">
+					Bairro: Humaita <br>
+					CODIGO: 201400098 <br>
+					Casa com 2 quartos, sala, cozinha, banheiro, garagem.
+					</font>
+			</td>
+			<td width="390" height="300">
+				<a href="contato.html"><img src="imagens/destaque2.png" /></a>
+					<font size="3" face="Verdana">
+					Bairro: São Pedro <br>
+					CODIGO: 201400097 <br>
+					Casa com 4 quartos, sala, cozinha, 2 banheiros, garagem para 4 veículos.
+					</font>
+			</td>
+			</tr>
+			<tr>
+			<td width="390" height="300">
+				<a href="contato.html"><img src="imagens/destaque3.png" /></a>
+					<font size="3" face="Verdana">
+					Bairro: Centro <br>
+					CODIGO: 201400096 <br>
+					Apartamento 4 quartos, sala, cozinha, 2 banheiros (suite),área gourmet, garagem.
+					</font>
+			</td>
+			<td width="390" height="300">
+				<a href="contato.html"><img src="imagens/destaque4.png" /></a>
+					<font size="3" face="Verdana">
+					Bairro: Industrial <br>
+					CODIGO: 201400099 <br>
+					Casa com 3 quantos, sala, cozinha, 2 banheiros, garagem.
+					</font>
+			</td>
+			</tr>
+		</table>
+	</div>
+    
+	<div id="rodape">
+     		<font color="white" face="Arial" size="2">
+       		TRABALHO: Engenharia de Software - UFJF<br>
+        	WEBSITE DESENVOLVIDO POR <b>Grupo 2</b><br>
+            	</font>
+    	</div>
+
+	</body>
+
+</html>
